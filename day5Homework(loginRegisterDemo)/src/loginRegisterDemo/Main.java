@@ -3,7 +3,7 @@ package loginRegisterDemo;
 import loginRegisterDemo.business.abstracts.UserService;
 import loginRegisterDemo.business.concretes.UserManager;
 import loginRegisterDemo.business.concretes.VerificationManager;
-import loginRegisterDemo.core.concretes.GoogleRegisterAdapterManager;
+import loginRegisterDemo.core.concretes.GoogleLoginAdapterManager;
 import loginRegisterDemo.dataAccess.entities.HibernateUserDao;
 import loginRegisterDemo.entities.concretes.User;
 
@@ -26,7 +26,7 @@ public class Main {
 		user2.setEmail("abc@gmail.com");
 		user2.setPassword("123123");
 		
-		UserService userService = new UserManager(new HibernateUserDao(), new GoogleRegisterAdapterManager(), new VerificationManager()); 
+		UserService userService = new UserManager(new HibernateUserDao(), new GoogleLoginAdapterManager(), new VerificationManager()); 
 		userService.register(user1);
 		System.out.println("*********************");
 		

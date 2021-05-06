@@ -6,14 +6,14 @@ import java.util.regex.Pattern;
 
 import loginRegisterDemo.business.abstracts.UserService;
 import loginRegisterDemo.business.abstracts.VerificationService;
-import loginRegisterDemo.core.abstracts.RegisterService;
+import loginRegisterDemo.core.abstracts.LoginService;
 import loginRegisterDemo.dataAccess.abstracts.UserDao;
 import loginRegisterDemo.entities.concretes.User;
 
 public class UserManager implements UserService {
 
 	private UserDao userDao;
-	private RegisterService registerService;
+	private LoginService registerService;
 	private VerificationService verificationService;
 	private ArrayList<String> eMailList = new ArrayList<String>();
 	private ArrayList<String> passwordList = new ArrayList<String>();
@@ -27,7 +27,7 @@ public class UserManager implements UserService {
 		return true;
 	}
 	
-	public UserManager(UserDao userDao, RegisterService registerService, VerificationService verificationService) {
+	public UserManager(UserDao userDao, LoginService registerService, VerificationService verificationService) {
 		this.verificationService = verificationService;
 		this.userDao = userDao;
 		this.registerService = registerService;
