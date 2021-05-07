@@ -1,4 +1,4 @@
-package loginRegisterDemo.dataAccess.entities;
+package loginRegisterDemo.dataAccess.concretes;
 
 import java.util.List;
 

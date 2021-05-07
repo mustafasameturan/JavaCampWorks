@@ -4,7 +4,7 @@ import loginRegisterDemo.business.abstracts.UserService;
 import loginRegisterDemo.business.concretes.UserManager;
 import loginRegisterDemo.business.concretes.VerificationManager;
 import loginRegisterDemo.core.concretes.GoogleLoginAdapterManager;
-import loginRegisterDemo.dataAccess.entities.HibernateUserDao;
+import loginRegisterDemo.dataAccess.concretes.HibernateUserDao;
 import loginRegisterDemo.entities.concretes.User;
 
 public class Main {
