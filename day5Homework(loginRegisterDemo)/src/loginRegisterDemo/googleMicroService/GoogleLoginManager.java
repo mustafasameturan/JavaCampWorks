@@ -1,6 +1,6 @@
 package loginRegisterDemo.googleMicroService;
 
-public class GoogleLoginLoginManager {
+public class GoogleLoginManager {
 	
 	public void login(String email, String password) {
 		if(email.isEmpty() || password.isEmpty()) {
